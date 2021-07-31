@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+
+        
+        body{
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        #bloque{
+            width:100vh;
+            height: 100vh;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+    
+        
+        h1{
+            color:black;
+            text-transform: uppercase;
+            border:crimson solid 5px;
+            padding: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            
+        }
+        th{
+            text-transform: uppercase;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            width: 180px;
+            
+        }
+        td{
+            background-color:lightgray;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+
+        th, td{
+            padding:5px;
+        }
+        td:hover{
+            background-color:mediumturquoise;
+        }
+        
+           
+    </style>
+
+    <body>
+        <div id="bloque">
+        <h1>tabla de medidas css</h1>
+       
+        <table border="1">
+            
+            <tr bgcolor="grey">
+                <th>nombre de medida</th>
+                <th>tipo de medida</th>
+                <th>para que se usan</th>
+                <th>ventajas</th>
+                <th>desventajas</th>
+                
+            </tr>
+            <tr> 
+                <td>em</td>
+                <td>relativa</td>
+                <td>se relaciona con el tamaño de la fuente padre</td>
+                <td>accesibilidad</td>
+                <td>cuando hay una lista dentro de otra/causa un efecto cascada en el tamaño de la letra</td>
+                
+            </tr>
+            <tr>
+                <td>rem</td>
+                <td>relativa</td>
+                <td>basada en el tamaño de la fuente raiz html</td>
+                <td>accesibilidad/al tomar su base en el html mantiene el tamaño cuando hay un elemento dentro de otro</td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>absoluta</td>
+                <td>unidad minima de resolucion de la pantalla</td>
+                <td></td>
+                <td>no es adaptable</td>
+                
+            </tr>
+            <tr>
+                <td>pt</td>
+                <td>absoluta</td>
+                <td>se usa para documentos css en los que se fija el tamaño de la fuente en medios impresos</td>
+                <td></td>
+                <td></td>
+                
+
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>relativa</td>
+                <td>estan basados en el contenedor padre</td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td>relativa</td>
+                <td>1% del ancho de la ventana grafica</td>
+                <td>es adaptable al ancho de la pantalla del navegador</td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>relativa</td>
+                <td>1% del alto de la ventana grafica pero depende del contendido que tengamos</td>
+                <td>es adaptable a la altura de la pantalla del navegador</td>
+                <td></td>
+                
+            </tr>
+    
+
+
+        </table>
+    </div>
+
+    
+    </body>
+</html>
